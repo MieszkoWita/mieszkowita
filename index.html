@@ -1,0 +1,22 @@
+<p>Siema, zapraszam na mojego DC:</p>
+
+<iframe src="https://discord.com/widget?id=1372999054455341236&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+<p>A przy okazji możesz tu kupić bilet na PKP:</p>
+
+<div id="bilkom-widget"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+var options = {
+    settings: {
+        arrival: false,
+        newWindow: true,
+        carriers: "P1"
+    }
+};
+document.addEventListener("bwLoad", function (e) {iBW(options)});
+var scr = document.createElement("script");
+scr["src"] = "https://bilkom.pl/js/bilkom-widget.min.js";
+var tag = document.getElementsByTagName("head");
+if (tag && tag.length) {tag = tag[0];tag.appendChild(scr);}
+</script>
